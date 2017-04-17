@@ -30,7 +30,7 @@ class Admin::JobsController < ApplicationController
   end
 
   def update
-    @jobs = Job.find(params[:id])
+    @job = Job.find(params[:id])
     if @job.update(job_params)
       redirect_to admin_jobs_path
     else
