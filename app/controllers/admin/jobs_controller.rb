@@ -11,7 +11,7 @@ class Admin::JobsController < ApplicationController
     @jobs = Job.all
   end
 
-  def now
+  def new
     @job = Job.new
   end
 
