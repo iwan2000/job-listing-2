@@ -120,6 +120,12 @@
   transition: 0.5s;
 }
 
+body {
+  position: relative;
+  margin-bottom: 100px; 
+  min-height: 100%;
+}
+
 
  //---------Footer---------
 
@@ -131,3 +137,11 @@
       padding: 25px 0;
       background-color: #233140;
   }
+
+  footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  z-index: 1000
+}
