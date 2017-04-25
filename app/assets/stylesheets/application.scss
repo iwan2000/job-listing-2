@@ -218,3 +218,30 @@ body {
    margin: 0 -15px 20px;//顶部margin为0，因此可以直接接着导航栏；左右margin为负15，因此可以顶到浏览器的边缘（抵消 container-fluid 的 15px 左右padding);底部margin为20，会跟下面的内容撑开距离
    border-radius: 0;//圆角为0
  }
+
+ //----------part4---------
+  .btn-danger {
+     color: #fff;//字体颜色
+
+     background-color: #EF6C00;//背景颜色
+
+     border-color: #EF6C00;//边框颜色
+
+ }
+
+ .btn-danger:hover {
+     background-color: #E65100;//鼠标放置在btn上的背景颜色
+
+     border-color: #E65100;//鼠标放置在btn上的边框颜色
+
+ }
+
+ //---------part----------
+
+ .btn-lg, .btn-group-lg > .btn {
+     padding: 8px 16px;//通过padding来决定btn的大小
+     font-size: 16px;//btn文字大小
+     letter-spacing: 3px;//调整文字间距
+     border-radius: 3px;//btn圆角
+     width: 200px;//这里用指定宽度把btn拉得更长
+ }
