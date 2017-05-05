@@ -1,6 +1,8 @@
 class JobsController < ApplicationController
   before_action :authenticate_user!, only: [:new, :create, :update, :edit, :destroy]
   before_action :validate_search_key, only: [:search]
+  before_action :validate_city_key, only: [:city]
+
   def index
     @jobs = case params[:order]
     when 'by_lower_bound'
@@ -63,6 +65,13 @@ class JobsController < ApplicationController
     end
   end
 
+  def city
+    if @cuery_string.present?
+      city_result = Job.published.ransack(@city_criteria).result(:distinct => true)
+      @jobs = city_result.paginate(:page => params[:page], :per_page =>6 )
+    end
+  end
+
 
   protected
 
@@ -74,6 +83,15 @@ class JobsController < ApplicationController
 
   def search_criteria(query_string)
     { :title_cont => query_string }
+  end
+
+    def validate_city_key
+    @cuery_string = params[:c].gsub(/\\|\'|\/|\?/, "") if params[:c].present?
+    @city_criteria = {place_cont: @cuery_string}
+  end
+
+  def city_criteria(cuery_string)
+    { :title_cont => cuery_string}
   end
 
   private
