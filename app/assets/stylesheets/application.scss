@@ -21,6 +21,10 @@
  @import url(http://fonts.googleapis.com/css?family=Roboto);
 
 
+ul {
+  list-style-type: none;
+}
+
  //---------Navbar---------
 
  .navbar-default {
@@ -502,3 +506,94 @@ span {
   background-color: #1565C0;
   color: white;
 }
+
+//---------city------
+
+// .columns ul {
+//     list-style-type: none;
+// }
+//
+// .panel-pricing {
+//     -moz-transition: all .3s ease;
+//     -o-transition: all .3s ease;
+//     -webkit-transition: all .3s ease;
+// }
+//
+// .panel-info {
+//     border-color: #bce8f1;
+// }
+//
+// .panel {
+//     margin-bottom: 20px;
+//     background-color: #fff;
+//     border: 1px solid transparent;
+//     border-radius: 4px;
+//     -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+//     box-shadow: 0 1px 1px rgba(0,0,0,0.05);
+// }
+//
+// .list-group {
+//     margin-bottom: 20px;
+//     padding-left: 0;
+// }
+//
+// .text-center {
+//     text-align: center;
+// }
+//
+// ul, ol {
+//     margin-top: 0;
+//     margin-bottom: 10px;
+// }
+//
+// * {
+//     -webkit-box-sizing: border-box;
+//     -moz-box-sizing: border-box;
+//     box-sizing: border-box;
+// }
+//
+// ul, menu, dir {
+//     display: block;
+//     list-style-type: disc;
+//     -webkit-margin-before: 1em;
+//     -webkit-margin-after: 1em;
+//     -webkit-margin-start: 0px;
+//     -webkit-margin-end: 0px;
+//     -webkit-padding-start: 40px;
+// }
+//
+// .columns {
+//     margin-bottom: 20px;
+//     cursor: pointer;
+// }
+//
+// body {
+//     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+//     font-size: 14px;
+//     line-height: 1.42857143;
+//     color: #333333;
+//     background-color: #fff;
+// }
+//
+// html {
+//     font-size: 10px;
+//     -webkit-tap-highlight-color: transparent;
+// }
+//
+// html {
+//     font-family: sans-serif;
+//     -ms-text-size-adjust: 100%;
+//     -webkit-text-size-adjust: 100%;
+// }
+//
+// :before, :after {
+//     -webkit-box-sizing: border-box;
+//     -moz-box-sizing: border-box;
+//     box-sizing: border-box;
+// }
+//
+// :before, :after {
+//     -webkit-box-sizing: border-box;
+//     -moz-box-sizing: border-box;
+//     box-sizing: border-box;
+// }

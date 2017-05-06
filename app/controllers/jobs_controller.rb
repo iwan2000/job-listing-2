@@ -61,14 +61,14 @@ class JobsController < ApplicationController
   def search
     if @query_string.present?
       search_result = Job.published.ransack(@search_criteria).result(:distinct => true)
-      @jobs = search_result.paginate(:page => params[:page], :per_page => 5 )
+      @jobs = search_result.paginate(:page => params[:page], :per_page => 8 )
     end
   end
 
   def city
     if @cuery_string.present?
       city_result = Job.published.ransack(@city_criteria).result(:distinct => true)
-      @jobs = city_result.paginate(:page => params[:page], :per_page =>6 )
+      @jobs = city_result.paginate(:page => params[:page], :per_page =>8 )
     end
   end
 
